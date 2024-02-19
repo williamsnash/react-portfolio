@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docs
+- https://mui.com/material-ui/experimental-api/css-theme-variables/usage/#toggle-between-light-and-dark-mode
+- https://mui.com/material-ui/customization/dark-mode/
+- https://mui.com/material-ui/customization/theming/
+
 ## Available Scripts
 
 In the project directory, you can run:
