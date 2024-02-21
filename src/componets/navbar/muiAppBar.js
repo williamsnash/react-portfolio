@@ -14,7 +14,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import ThemedSwitch from './ThemedSwitch';
 import { NavLink } from 'react-router-dom';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['About', 'Projects'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

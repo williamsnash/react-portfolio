@@ -9,6 +9,7 @@ import ResponsiveAppBar from '../componets/navbar/muiAppBar';
 
 //Pages
 import Home from "../pages/Home/Home";
+import About from '../pages/About/About';
 import Gallery from "../pages/Gallery/Gallery";
 
 
@@ -22,12 +23,17 @@ const getDesignTokens = (mode) => ({
     ...(mode === 'light'
       ? {
         // palette values for light mode
+        background: {
+          gradient: 'linear-gradient()'
+        }
       }
       : {
         // palette values for dark mode
         background: {
           default: "#282c34",
           paper: "#282c34",
+          gradient: 'linear-gradient(to right bottom, #b32375, #9a2d7f, #7f3583, #633a83, #463c7e, #334381, #1d4981, #004e7e, #005c83, #006883, #00747e, #0d7e77)'
+
         },
       }),
   },
@@ -64,9 +70,10 @@ export default function App() {
           <div className="main" style={{ backgroundColor: theme.palette.background.default }}>
             {/* <Navbar className="navBar" /> */}
             <ResponsiveAppBar />
-            <div className="content" style={{ height: 'calc(100vh - 48px' }}>
+            <div className="content" style={{ height: 'calc(100vh - 68.5px' }}>
               <Routes>
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="/about" element={<About />} />
                 <Route exact path="/gallery" element={<Gallery />} />
               </Routes>
             </div>

@@ -6,7 +6,7 @@ function Home() {
   const theme = useTheme()
   return (
     <div className="Home">
-      <header className="Home-header">
+      <div className="Home-header">
         <img src={logo} className="Home-logo" alt="logo" />
         <p style={{ color: theme.palette.text.primary }}>
           Edit <code>src/Home.js</code> and save to reload.
@@ -20,7 +20,7 @@ function Home() {
         >
           Learn React
         </a>
-      </header>
+      </div>
     </div>
   );
 }
