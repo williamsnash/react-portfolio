@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@mui/material";
-import ProjectCard from "../../componets/ProjectCard/ProjectCard";
+import ProjectCard from "../../componets/Project/ProjectCard";
 import { useTheme } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 
@@ -14,12 +14,19 @@ const projectsList = [
     tags: [
       "Large - Language - Model",
       "AI",
+      "Next.js",
       "React",
-      "Material-UI",
       "Web Development",
     ],
   },
-  // ... more projects
+  {
+    path: "/projects/portfolio",
+    name: "Portfolio",
+    description:
+      "My personal portfolio website to showcase my projects and skills. Built with React and Material-UI.",
+    // image: "url/to/project/one/image.jpg",
+    tags: ["React", "AWS S3", "Material-UI", "Web Development"],
+  },
 ];
 
 const Projects = () => {
@@ -30,6 +37,7 @@ const Projects = () => {
         height: "100%",
         width: "100%",
         background: theme.palette.background.gradient.radial2,
+        color: theme.palette.text.primary,
       }}
     >
       <Container>

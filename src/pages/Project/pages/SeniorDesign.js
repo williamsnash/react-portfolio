@@ -1,10 +1,10 @@
-import Project from "../../componets/ProjectPage";
+import Project from "../../../componets/Project/ProjectPage";
 
 export default function SeniorDesign() {
   return (
     <Project
       title="Senior Design"
-      about=" Our senior design project was to use a LLM (Large Language Model) like
+      about="Our senior design project was to use a LLM (Large Language Model) like
             ChatGPT to assess student's understanding of material through an oral
             exam. An example would be if I was taking a class on the history of
             the United States, and I was asked to explain the Civil War, I would

@@ -25,6 +25,8 @@ const ProjectCard = ({ project }) => {
               key={index}
               label={tag}
               style={{ marginRight: "0.5em", marginTop: "0.5em" }}
+              variant="outlined"
+              size="small"
             />
           ))}
         </div>

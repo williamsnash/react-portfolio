@@ -4,17 +4,17 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 // import color from '@mui/material/colors';
 
 //Components
-import Navbar from "../componets/navbar/navbar";
 import ResponsiveAppBar from "../componets/navbar/muiAppBar";
 
 //Pages
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Gallery from "../pages/Gallery/Gallery";
-import Projects from "../pages/Projects/Projects";
+import Projects from "../pages/Project/Projects";
 
 //Projects
-import SeniorDegin from "../pages/Projects/SeniorDesign";
+import { SeniorDesign, Portfolio } from "../pages/Project/pages";
+
 /**
  * Allow for customizing the theme modes
  * @param {PaletteMode} mode
@@ -97,7 +97,12 @@ export default function App() {
                 <Route
                   exact
                   path="/projects/seniordesign"
-                  element={<SeniorDegin />}
+                  element={<SeniorDesign />}
+                />
+                <Route
+                  exact
+                  path="/projects/portfolio"
+                  element={<Portfolio />}
                 />
               </Routes>
             </div>

@@ -17,16 +17,12 @@ export default function Project({ title, about, role, skills }) {
       alignItems="center"
       // justifyContent="center"
     >
-      <Grid
-        item
-        xs={6}
-        sx={{ width: "50%", color: theme.palette.text.primary }}
-      >
+      <Grid item xs={6} sx={{ width: "50%", color: theme.palette.text.primary }}>
         <h1>{title}</h1>
         <h2>About</h2>
         <p style={{ width: "100%", wordWrap: "break-word" }}>{about}</p>
         <h2>My Role</h2>
-        <p style={{ width: "100%", wordWrap: "break-word" }}>{role}</p>
+        <div style={{ width: "100%", wordWrap: "break-word" }}>{role}</div>
         <Divider />
         <h2>Skills Learned & Used</h2>
         <ul>
