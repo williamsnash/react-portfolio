@@ -20,10 +20,12 @@ export default function Project({ title, about, role, skills }) {
       <Grid item xs={6} sx={{ width: "50%", color: theme.palette.text.primary }}>
         <h1>{title}</h1>
         <h2>About</h2>
-        <p style={{ width: "100%", wordWrap: "break-word" }}>{about}</p>
+        <div style={{ width: "100%", wordWrap: "break-word" }}>{about}</div>
         <h2>My Role</h2>
         <div style={{ width: "100%", wordWrap: "break-word" }}>{role}</div>
-        <Divider />
+        <Divider
+          sx={{ marginTop: "1.5em", borderBottomWidth: 5, borderRadius: 5 }}
+        />
         <h2>Skills Learned & Used</h2>
         <ul>
           {skills.map((skill, index) => (
