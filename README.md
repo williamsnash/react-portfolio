@@ -1,9 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-<img href="https://github.com/williamsnash/react-portfolio/blob/main/public/IMG_4604.jpg"/>
 <picture>
-  <img href="./public/IMG_4604.jpg"/>
+  <img href="https://github.com/williamsnash/react-portfolio/blob/main/public/IMG_4604.jpg"/>
 </picture>
 ## Docs
 - https://mui.com/material-ui/experimental-api/css-theme-variables/usage/#toggle-between-light-and-dark-mode
